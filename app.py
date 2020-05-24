@@ -1,12 +1,10 @@
-from flask import Flask, session
-
+from flask import Flask
 
 app = Flask(__name__)
 
 
 @app.route('/')
 def hello_world():
-    print(session)
     return 'Hello World!'
 
 
